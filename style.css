@@ -161,6 +161,7 @@ button {
   font-family: "Spartan MB", sans-serif;
   text-align: center;
   font-size: 0.7rem;
+  opacity: 70%;
 }
 
 .sale {
@@ -175,6 +176,7 @@ button {
   text-align: center;
   font-size: 0.7rem;
 }
+
 @media (min-width: 900px) {
   .new {
     background-color: var(--contrast-color);
