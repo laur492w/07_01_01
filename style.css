@@ -164,7 +164,7 @@ button {
   opacity: 70%;
 }
 
-.sale {
+.discount {
   background-color: var(--sale-color);
   padding: 0.2rem;
   color: #f0e1ca;
@@ -204,7 +204,7 @@ button {
     font-size: 1.2rem;
   }
 
-  .sale {
+  .discount {
     background-color: var(--sale-color);
     padding: 0.2rem;
     color: #f0e1ca;
