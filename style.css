@@ -1,0 +1,236 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-family: "pt_serifregular", sans-serif;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Farver */
+html {
+  --primary-color: #ffffff;
+  --secondary-color: #d36520;
+  --contrast-color: black;
+  --soldout-color: grey;
+  --sale-color: red;
+  --cta-color: rgb(28, 75, 162);
+  --header-color: hsl(196, 84%, 76%);
+  --text-color: black;
+  --footer-color: rgb(145, 189, 201);
+}
+
+footer {
+  background-color: var(--footer-color);
+  padding: 2rem;
+  font-size: 0.7rem;
+  margin-top: 30rem;
+}
+
+.banner {
+  /* 1. Få elementerne til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden */
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px 40px;
+}
+
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+
+  /* 2. Få elementerne til at stå ved siden af hinanden */
+  display: flex;
+}
+
+.main-menu.shown ul {
+  border-top: 1px solid;
+  padding-top: 1rem;
+  display: flex;
+  flex-flow: column;
+  flex-basis: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  padding: 0.9rem 2.5rem;
+  position: sticky;
+  align-items: baseline;
+  font-family: "antique-olive", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  background-color: var(--header-color);
+  z-index: 100;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 30px;
+  overflow-x: auto;
+  font-weight: 300;
+}
+
+nav ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+nav ul a {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--contrast-color);
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--contrast-color);
+}
+
+.her_link {
+  color: var(--secondary-color);
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+main {
+  margin: 0.5rem 1rem 20rem 1rem;
+  padding: 20px;
+  padding-bottom: 6rem;
+}
+
+h1 h2 h3 h4 {
+  color: var(--secondary-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+dt {
+  font-size: larger;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+dd {
+  padding: 0 1rem 0 1rem;
+}
+
+button {
+  background-color: #e58715;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.new {
+  background-color: var(--contrast-color);
+  padding: 0.2rem;
+  color: #f0e1ca;
+  text-decoration: none;
+  width: 100%;
+  gap: 10px;
+  display: inline-block;
+  font-family: "Spartan MB", sans-serif;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.soldOut {
+  background-color: var(--soldout-color);
+  padding: 0.2rem;
+  color: #f0e1ca;
+  text-decoration: none;
+  width: 100%;
+  gap: 10px;
+  display: inline-block;
+  font-family: "Spartan MB", sans-serif;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.sale {
+  background-color: var(--sale-color);
+  padding: 0.2rem;
+  color: #f0e1ca;
+  text-decoration: none;
+  width: 100%;
+  gap: 10px;
+  display: inline-block;
+  font-family: "Spartan MB", sans-serif;
+  text-align: center;
+  font-size: 0.7rem;
+}
+@media (min-width: 900px) {
+  .new {
+    background-color: var(--contrast-color);
+    padding: 0.2rem;
+    color: #f0e1ca;
+    text-decoration: none;
+    gap: 10px;
+    width: 100%;
+    display: inline-block;
+    font-family: "Spartan MB", sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .soldOut {
+    background-color: var(--soldout-color);
+    padding: 0.2rem;
+    color: #f0e1ca;
+    text-decoration: none;
+    gap: 10px;
+    width: 100%;
+    display: inline-block;
+    font-family: "Spartan MB", sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .sale {
+    background-color: var(--sale-color);
+    padding: 0.2rem;
+    color: #f0e1ca;
+    text-decoration: none;
+    gap: 10px;
+    width: 100%;
+    display: inline-block;
+    font-family: "Spartan MB", sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 4.5rem;
+    padding: var(--space-h1);
+  }
+
+  h2 {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 3rem;
+    padding: var(--space-h2);
+  }
+
+  main {
+    margin: 0.5rem 8rem 20rem 8rem;
+    padding: 20px;
+  }
+}
