@@ -140,40 +140,38 @@ button {
 .new {
   background-color: var(--contrast-color);
   padding: 0.2rem;
-  color: #f0e1ca;
+  color: #000000;
   text-decoration: none;
   width: 100%;
   gap: 10px;
   display: inline-block;
   font-family: "Spartan MB", sans-serif;
-  text-align: center;
   font-size: 0.7rem;
 }
 
 .soldOut {
-  background-color: var(--soldout-color);
   padding: 0.2rem;
-  color: #f0e1ca;
+  color: #000000;
   text-decoration: none;
   width: 100%;
   gap: 10px;
   display: inline-block;
   font-family: "Spartan MB", sans-serif;
-  text-align: center;
   font-size: 0.7rem;
   opacity: 70%;
 }
 
 .discount {
+  display: flex;
+  justify-content: flex-start;
   background-color: var(--sale-color);
   padding: 0.2rem;
-  color: #f0e1ca;
+  color: #000000;
   text-decoration: none;
-  width: 100%;
+  width: 50%;
   gap: 10px;
   display: inline-block;
   font-family: "Spartan MB", sans-serif;
-  text-align: center;
   font-size: 0.7rem;
 }
 
@@ -181,40 +179,41 @@ button {
   .new {
     background-color: var(--contrast-color);
     padding: 0.2rem;
-    color: #f0e1ca;
+    color: #ffffff;
     text-decoration: none;
     gap: 10px;
     width: 100%;
     display: inline-block;
     font-family: "Spartan MB", sans-serif;
-    text-align: center;
     font-size: 1.2rem;
+    left: 0;
+    top: 0;
   }
 
   .soldOut {
-    background-color: var(--soldout-color);
     padding: 0.2rem;
-    color: #f0e1ca;
+    color: #000000;
     text-decoration: none;
     gap: 10px;
     width: 100%;
     display: inline-block;
     font-family: "Spartan MB", sans-serif;
-    text-align: center;
     font-size: 1.2rem;
+    left: 0;
+    top: 0;
   }
 
   .discount {
     background-color: var(--sale-color);
-    padding: 0.2rem;
-    color: #f0e1ca;
+    padding: 0.5rem;
+    color: #ffffff;
     text-decoration: none;
     gap: 10px;
-    width: 100%;
     display: inline-block;
     font-family: "Spartan MB", sans-serif;
-    text-align: center;
     font-size: 1.2rem;
+    left: 0;
+    top: 0;
   }
 
   h1 {
@@ -235,4 +234,22 @@ button {
     margin: 0.5rem 8rem 20rem 8rem;
     padding: 20px;
   }
+}
+
+.smallProduct {
+  position: relative;
+}
+
+.tilbud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tilbud span:nth-child(2) {
+  background-color: #f65b5b;
+  padding: 0.3rem;
+}
+
+.hidden {
+  display: none;
 }
